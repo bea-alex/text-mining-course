@@ -1,7 +1,7 @@
 # Text Mining course
-This is a carpentries style text mining course which under development.  It is targetted at humanities and social science students and researchers who have no experience in text mining.
+This is a carpentries style text mining course which is under development.  It is targetted at humanities and social science students and researchers who have no expertise in text mining.
 
-The course is scheduled to run over two days and we are currently doing trial runs to collect feedback, add further explanations and make changes where needed.
+The course is scheduled to run over two days and we are currently doing trial runs with students at the University of Edinburgh to collect feedback to make changes or add more explanations where needed.
 
 We run the course using Jupyter Notebook and start with a list of prerequisites needed to get going.
 
