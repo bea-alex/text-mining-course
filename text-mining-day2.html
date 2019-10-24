@@ -13084,6 +13084,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Before we start on this part of the lesson, please check that you have installed all the necessary software listed in the <a href="https://github.com/bea-alex/text-mining-course/blob/master/prerequisites.md">Prerequisites</a>.</p>
+<p>In this part of the course, you will learn how to do the following:</p>
+<ol>
+<li>Part-of-speech tagging text</li>
+<li>Named entity recognition</li>
+<li>Visualising a network of entities</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="1.-Part-of-speech-tagging-text">1. Part-of-speech tagging text<a class="anchor-link" href="#1.-Part-of-speech-tagging-text">&#182;</a></h2><p>In text mining it can be useful to extract words that have a particular part of speech (POS) such as a noun or a verb. For example extracting all proper nouns can give use names and locations. This is done using a POS-tagger. The POS-tag of a word is a label of the word indicating its part of speech as well as grammatical categories such as tense, number (plural/singular) and case. POS tagging is the process of automatically determining the POS-tags of the tokens in a corpus.</p>
 <p>In this lesson, we will use NLTK’s <code>averaged_perceptron_tagger</code> as the POS-tagger. It uses the perceptron algorithm to predict which POS-tag is most likely given the word.  We need to download the tagger in order to use it.</p>
 <p>The POS-tagger outputs tokens tagged with their POS-tag.  It uses the <a href="https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html">Penn Treebank POS tagset</a> which is widely used for POS-tagging text.</p>
@@ -13456,13 +13470,13 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.-Named-Entity-Recognition">2. Named Entity Recognition<a class="anchor-link" href="#2.-Named-Entity-Recognition">&#182;</a></h2><p>Named entiy recognition (NER) or named entity tagging is a way of locating and classifying named entities in text (e.g. names of people, locations and organisations).  NER can be used to identity networks of people mentioned in data or as the first step towards geo-parsing text, i.e. extracting and disambiguating locations mentioned in text.</p>
-<p>There are several off-the-shelf NER taggers that we can use.  Here we will be using the Standford NER tagger (Finkel, Grenager, Manning (ACL 2005)).  To use it you need to first download it on your computer from:</p>
+<p>There are several off-the-shelf NER taggers that we can use.  Here we will be using the Standford NER tagger (Finkel, Grenager, Manning (ACL 2005)).  To use it you need to first download it.  You should have done this as part of the prerequisites but if not then download it to your computer from:</p>
 <p><a href="https://nlp.stanford.edu/software/stanford-ner-2018-10-16.zip">https://nlp.stanford.edu/software/stanford-ner-2018-10-16.zip</a></p>
-<p>Check where the stanford-ner-2018-10-16 directory was download to.  E.g. on Mac it's typically in the <code>~/Downloads</code> directory.  The directory path to the Standford tagger is needed to be able to run it.</p>
+<p>Check where the stanford-ner-2018-10-16 directory was downloaded to.  E.g. on Mac it's typically in the <code>~/Downloads</code> directory.  The directory path to the Standford tagger is needed to be able to run it.</p>
 <p>To run the Standford NER Tagger using NLTK you first need to import its NLTK class and then call it by specifying its model which in my case is: <code>/Users/balex/Downloads/stanford-ner-2018-1016/classifiers/english.all.3class.distsim.crf.ser.gz</code> (but you will need to change it!)</p>
 <p>and the path to the <code>standfor-ner.jar</code> file (in my case):</p>
 <p><code>/Users/balex/Downloads/stanford-ner-2018-10-16/stanford-ner.jar</code></p>
-<p>These paths change depending on where you saved the tagger.</p>
+<p>These paths need to change depending on where you saved the tagger.</p>
 
 </div>
 </div>
@@ -13485,7 +13499,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We've already loaded the inaugural corpus from NLTK as an example.  So we will use their text (<code>inaugural_tokens</code>) to tag it with named entities (in this case names of persons, organisations and locations).  To do that we just call <code>st.tag()</code> on that list of word tokens. The result is a list of tuples (word token plus NER tag). This can take a few seconds as it has to process all of the inaugural corpus. We can then show the first 60:</p>
+<p>We have already loaded the inaugural corpus from NLTK as an example.  So we will use their text (<code>inaugural_tokens</code>) to tag it with named entities (in this case names of persons, organisations and locations).  To do that we just call <code>st.tag()</code> on that list of word tokens. The result is a list of tuples (word token plus NER tag). This can take a few seconds as it has to process all of the inaugural corpus. We can then show the first 60:</p>
 
 </div>
 </div>
@@ -13867,7 +13881,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-Network-of-entities">3. Network of entities<a class="anchor-link" href="#3.-Network-of-entities">&#182;</a></h2>
+<h2 id="3.-Visualising-a-network-of-entities">3. Visualising a network of entities<a class="anchor-link" href="#3.-Visualising-a-network-of-entities">&#182;</a></h2>
 </div>
 </div>
 </div>
