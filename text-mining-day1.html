@@ -13106,6 +13106,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>To create a new jupyter notebook you need to select a location for it on your computer via the browser window that opened up and click on "New" in the top right corner of the browser.  You need to select Python 3.  Once the new notebook opens you can give it a name by changing the word "Untitled" in the first line of the notebook.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="1.1-Introduction-to-Python">1.1 Introduction to Python<a class="anchor-link" href="#1.1-Introduction-to-Python">&#182;</a></h3><p>Python is a programming language. We will use this as a way to interact with out text documents. We can use Python either through the command line in your terminal window, by writing Python scripts or via Jupyter Notebook. Today we will be using Jupyter Notebook.</p>
 <p>We first want to test that the Python works by asking it to print a string, so type <code>print("Hello World")</code> into the next Jupyter Notebook cell as shown below and run it as code.</p>
 
@@ -14909,7 +14917,7 @@ ylum for many years , informs me that he does not know of a case of complete c
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can plot lexical dispersion of particular tokens. Lexical dispersion is a measure of how frequently a word appears across the parts of a corpus. This plot notes the occurrences of a word and how many words from the beginning of the corpus it appears (word offsets). This is particularly useful for a corpus that covers a longer time period and for which you want to analyse how specific terms were used more or less frequently over time.</p>
-<p>To create a lexical disperson plot, you will first load a different corpus, the inaugural corpus which are all US Presidential Inaugural Addresses and which are provided with NLTK.</p>
+<p>To create a lexical disperson plot, you will first load and import a different corpus, the inaugural corpus which are all US Presidential Inaugural Addresses and which are provided with NLTK.</p>
 
 </div>
 </div>
@@ -14919,7 +14927,8 @@ ylum for many years , informs me that he does not know of a case of complete c
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">inaugural</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;inaugural&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">inaugural</span>
 <span class="n">inaugural_tokens</span><span class="o">=</span><span class="n">inaugural</span><span class="o">.</span><span class="n">words</span><span class="p">()</span>
 <span class="n">inaugural_texts</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">inaugural_tokens</span><span class="p">)</span>
 </pre></div>
