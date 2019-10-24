@@ -14313,7 +14313,7 @@ ylum for many years , informs me that he does not know of a case of complete c
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The next line is a bit more complex combining a for loop and and an if statement so let's explain this in a bit more detail.</p>
-<p>The code first goes through each element in the <code>lower_india_tokens</code> list using a for loop and assigning each element in that list to the variable<code>w</code> , the if statement then specifies to only return true if the strings assigned to <code>w</code> matches "woman" or "women".  If that is the case then the word is added to the <code>womaen_strings</code> list.</p>
+<p>The code first goes through each element in the <code>lower_india_tokens</code> list using a for loop and assigning each element in that list to the variable<code>w</code>. The if statement then specifies to only return true if the strings assigned to <code>w</code> matches "woman" or "women".  If that is the case then the word is added to the <code>womaen_strings</code> list.</p>
 <p>The regular expression search string <code>^wom[ae]n$</code> contains square brackets to indicate that the letter to match could be "a" or "e" (so either woman or women).  <code>^</code> means start of string and <code>$</code> means end of string, so the search is for the exact tokens "women" or "woman" but not for words containing them.</p>
 <p>You can see all the strings found in the corpus assigned to the <code>womaen_strings</code> list by printing it.</p>
 
