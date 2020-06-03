@@ -1,4 +1,3 @@
-
 # Prerequisites for the Text Mining course
 
 ### Prior Knowledge
@@ -72,13 +71,22 @@ conda install -c conda-forge wordcloud
 
 ### Software Installs for Day 2
 
-__7. Install Stanford NER tagger__
+__7. Installing the spaCy and dowloading a model__
 
-Go to the following URL and if your computer doesn't automatically download it, then download it yourself. 
+Windows: install spacy via the Anaconda prompt  
+macOS/Linux: run the following command in your terminal:
 
-https://nlp.stanford.edu/software/stanford-ner-2018-10-16.zip
 
-You can put the tagger anywhere you like.  For this workshop we recommend you put it into your Download folder.  The directory path to the Standford tagger is needed to be able to run some of the excersises on day 2.
+```python
+conda install -c conda-forge spacy
+```
+
+Download a spacy model in your terminal:
+
+
+```python
+python -m spacy download en_core_web_sm
+```
 
 __8. Install pandas__
 
